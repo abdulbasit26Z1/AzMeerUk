@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://azmeer.co.uk/sitemap.xml
