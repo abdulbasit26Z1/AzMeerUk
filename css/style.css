@@ -1,6 +1,7 @@
 /* ==========================================================================
    AZ MEER LTD (UK) - Custom CSS Design System
    Exact visual match for azmeer.tech with UK Software Engineering Adaptation
+   Enhanced for UK SEO, AEO (Answer Engine Optimisation), & AI Search Readiness
    ========================================================================== */
 
 :root {
@@ -116,6 +117,8 @@ img, svg {
 .gap-6 { gap: 1.5rem; }
 .gap-8 { gap: 2rem; }
 .gap-12 { gap: 3rem; }
+
+.text-center, .text-centre { text-align: center; }
 
 .grid-cols-1 { grid-template-columns: repeat(1, minmax(0, 1fr)); }
 @media (min-width: 640px) { .sm\:grid-cols-2 { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
@@ -352,7 +355,7 @@ img, svg {
   margin-bottom: 3rem;
 }
 
-.section-title.center {
+.section-title.center, .section-title.text-centre {
   text-align: center;
   max-width: 48rem;
   margin-left: auto;
@@ -384,7 +387,7 @@ img, svg {
   line-height: 1.6;
 }
 
-.section-title.center .section-subtitle {
+.section-title.center .section-subtitle, .section-title.text-centre .section-subtitle {
   margin-left: auto;
   margin-right: auto;
 }
@@ -444,9 +447,49 @@ img, svg {
   font-size: 1.5rem;
 }
 
-.icon-box-dark {
-  background-color: rgba(224, 169, 109, 0.15);
-  color: var(--accent);
+/* AEO (Answer Engine Optimisation) Fact Card */
+.aeo-fact-card {
+  background-color: var(--surface-light);
+  border: 1px solid var(--border-light);
+  border-left: 4px solid var(--accent);
+  border-radius: 1rem;
+  padding: 1.25rem 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.aeo-fact-title {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-weight: 700;
+  font-size: 0.95rem;
+  color: var(--text-on-light-heading);
+  margin-bottom: 0.75rem;
+}
+
+.aeo-fact-grid {
+  display: grid;
+  grid-template-columns: repeat(1, minmax(0, 1fr));
+  gap: 0.5rem 1.5rem;
+  font-size: 0.875rem;
+}
+
+@media (min-width: 640px) {
+  .aeo-fact-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+.aeo-fact-grid dt {
+  font-weight: 600;
+  color: var(--text-on-light-heading);
+  display: inline;
+}
+
+.aeo-fact-grid dd {
+  color: var(--text-on-light-body);
+  display: inline;
+  margin-left: 0.25rem;
 }
 
 /* Form Controls */
